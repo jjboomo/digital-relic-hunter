@@ -5,7 +5,7 @@
 
 > **原版简介**: Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）
 
-❌ AI 评估脑宕机: Error code: 500 - {'type': 'error', 'error': {'type': 'server_error', 'message': 'your current token plan not support model, abab6.5-chat (2061)', 'http_code': '500'}, 'request_id': '064d26173ca7f3d748627a300413ab3a'}
+❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064d2842b27f98cd116dbcc7719d5528'}
 
 ---
 
@@ -14,7 +14,7 @@
 
 > **原版简介**: :books: List of awesome university courses for learning Computer Science!
 
-❌ AI 评估脑宕机: Error code: 500 - {'type': 'error', 'error': {'type': 'server_error', 'message': 'your current token plan not support model, abab6.5-chat (2061)', 'http_code': '500'}, 'request_id': '064d261c2eb5bf6272c2249a11ba70c9'}
+❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064d28450cb935eb92f78752d12ff412'}
 
 ---
 
@@ -23,7 +23,7 @@
 
 > **原版简介**: Resumes generated using the GitHub informations
 
-❌ AI 评估脑宕机: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'rate limit exceeded(RPM) (1002)', 'http_code': '429'}, 'request_id': '064d2622743a814a6de021d8d9bd2f8f'}
+❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064d28498b332a7666d1d684832f6465'}
 
 ---
 
