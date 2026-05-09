@@ -1,6 +1,7 @@
 import os
 import time
 import requests
+import re
 from datetime import datetime
 from openai import OpenAI
 
@@ -104,7 +105,14 @@ def evaluate_relic(repo_data):
             max_tokens=2000,
             temperature=0.4
         )
-        return response.choices[0].message.content
+       # 1. 拿到 AI 返回的原始文本（包含那些英文草稿）
+        raw_text = response.choices[0].message.content
+        
+        # 2. 拔刀：利用正则，把 <think> 和 </think> 以及它们中间的所有内容全部删掉
+        clean_text = re.sub(r'<think>.*?</think>', '', raw_text, flags=re.DOTALL).strip()
+        
+        # 3. 返回干净纯粹的中文报告
+        return clean_text
     except Exception as e:
         return f"❌ AI 评估脑宕机: {e}"
 
