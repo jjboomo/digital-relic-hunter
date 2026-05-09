@@ -34,6 +34,10 @@ jobs:
         # 把刚才存入保险库的密钥，作为环境变量发给 Python 脚本
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+        # 👇 映射新的邮箱变量
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
       run: python hunter.py
 
     - name: Commit and Push the Report
