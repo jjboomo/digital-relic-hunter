@@ -96,7 +96,7 @@ def evaluate_relic(repo_data):
 
     try:
         response = client.chat.completions.create(
-            model="minimax2.7",
+            model="MiniMax-M2.7",
             messages=[
                 {"role": "system", "content": "你是一个眼光毒辣的技术投资人与资深黑客。"},
                 {"role": "user", "content": prompt}
