@@ -15,7 +15,7 @@ if not GH_TOKEN or not MINIMAX_API_KEY:
 # 2. 初始化 MiniMax 客户端
 client = OpenAI(
     api_key=MINIMAX_API_KEY,
-    base_url="https://api.minimax.chat/v1"
+    base_url="https://api.minimax.chat/v1/2045840694379024402"
 )
 
 HEADERS = {
