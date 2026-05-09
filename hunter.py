@@ -101,7 +101,7 @@ def evaluate_relic(repo_data):
                 {"role": "system", "content": "你是一个眼光毒辣的技术投资人与资深黑客。"},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=800,
+            max_tokens=2000,
             temperature=0.4
         )
         return response.choices[0].message.content
