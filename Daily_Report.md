@@ -5,7 +5,7 @@
 
 > **原版简介**: Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）
 
-❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064dccee09a83421a1c8c58e9ab97a89'}
+❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064dcde69e527ae41475529f0908d284'}
 
 ---
 
@@ -14,7 +14,7 @@
 
 > **原版简介**: :books: List of awesome university courses for learning Computer Science!
 
-❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064dccf29457d6ba544eac55bb5d8819'}
+❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064dcde9ae29e2cd6f1f067c14746677'}
 
 ---
 
@@ -23,7 +23,7 @@
 
 > **原版简介**: Resumes generated using the GitHub informations
 
-❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064dccf50cf9aba1387c9fc5c7a6e91c'}
+❌ AI 评估脑宕机: Error code: 400 - {'type': 'error', 'error': {'type': 'bad_request_error', 'message': "invalid params, unknown model 'minimax2.7' (2013)", 'http_code': '400'}, 'request_id': '064dcdecb9d831b7eda483c007fd13f1'}
 
 ---
 
