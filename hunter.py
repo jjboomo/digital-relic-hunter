@@ -2,6 +2,7 @@ import os
 import time
 import requests
 import re
+import random
 from datetime import datetime
 from openai import OpenAI
 
@@ -102,7 +103,7 @@ def evaluate_relic(repo_data):
                 {"role": "system", "content": "你是一个眼光毒辣的技术投资人与资深黑客。"},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=2000,
+            max_tokens=4000,
             temperature=0.4
         )
        # 1. 拿到 AI 返回的原始文本（包含那些英文草稿）
