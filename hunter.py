@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from openai import OpenAI
 
-# 1. 从云端保险库拉取钥匙 (本地测试时需手动 set 环境变量)
+# 1. 从云端保险库拉取钥匙
 GH_TOKEN = os.getenv("GH_TOKEN")
 MINIMAX_API_KEY = os.getenv("MINIMAX_API_KEY")
 
@@ -14,11 +14,13 @@ if not GH_TOKEN or not MINIMAX_API_KEY:
     print("❌ 致命错误：找不到 Token 或 API Key，请检查 Secrets 配置。")
     exit(1)
 
-# 2. 初始化 MiniMax 客户端
+# 2. 初始化 MiniMax 客户端 (加回了你的专属 GroupId，否则无法调用专属模型)
 client = OpenAI(
     api_key=MINIMAX_API_KEY,
     base_url="https://api.minimax.chat/v1", 
-
+    default_headers={
+        "GroupId": "2045840694379024402"  # 确保这个 ID 能让 API 认识你是付费大佬
+    }
 )
 
 HEADERS = {
@@ -27,10 +29,15 @@ HEADERS = {
 }
 
 def search_and_filter_targets():
-    """第一轮海选：硬指标抓取与漏斗截取"""
-    print("📡 正在向 GitHub 发射雷达扫描...")
-    # 搜索策略：停更于2024年之前，Star数大于500
-    query = "stars:>500 pushed:<2024-01-01"
+    """第一轮海选：加入盲盒机制的雷达扫描"""
+    
+    # 🎲 改造点 1：每日随机狩猎一种编程语言
+    languages = ["python", "javascript", "go", "rust", "cpp", "typescript", "java"]
+    target_lang = random.choice(languages)
+    print(f"📡 正在向 GitHub 发射雷达扫描... 今日锁定盲盒语言：{target_lang}")
+    
+    # 将随机语言加入搜索策略
+    query = f"stars:>500 pushed:<2024-01-01 language:{target_lang}"
     url = f"https://api.github.com/search/repositories?q={query}&sort=stars&order=desc&per_page=30"
 
     response = requests.get(url, headers=HEADERS)
@@ -46,7 +53,7 @@ def search_and_filter_targets():
     for repo in items:
         base_score = repo['stargazers_count'] / 100.0
         fork_ratio = (repo['forks'] / repo['stargazers_count']) if repo['stargazers_count'] > 0 else 0
-        potential_bonus = fork_ratio * 50 # Fork 率越高，越具备魔改价值
+        potential_bonus = fork_ratio * 50 
         
         last_pushed = datetime.strptime(repo['pushed_at'], "%Y-%m-%dT%H:%M:%SZ")
         years_abandoned = (now - last_pushed).days / 365.0
@@ -63,9 +70,14 @@ def search_and_filter_targets():
             "score": total_score
         })
 
-    # 排序并只截取前 3 名进入决赛圈！
+    # 先按价值分数从高到低排序
     sorted_relics = sorted(scored_relics, key=lambda x: x['score'], reverse=True)
-    return sorted_relics[:3]
+    
+    # 🎲 改造点 2：从排名前 15 的高分项目中，随机抽取 3 个！
+    top_pool = sorted_relics[:15]
+    final_targets = random.sample(top_pool, min(3, len(top_pool))) 
+    
+    return final_targets
 
 def evaluate_relic(repo_data):
     """第二轮深度评估：呼叫大模型算力"""
@@ -106,10 +118,10 @@ def evaluate_relic(repo_data):
             max_tokens=4000,
             temperature=0.4
         )
-       # 1. 拿到 AI 返回的原始文本（包含那些英文草稿）
+        # 1. 拿到 AI 返回的原始文本
         raw_text = response.choices[0].message.content
         
-        # 2. 拔刀：利用正则，把 <think> 和 </think> 以及它们中间的所有内容全部删掉
+        # 2. 拔刀：利用正则彻底删除 <think> 标签及内部的英文草稿
         clean_text = re.sub(r'<think>.*?</think>', '', raw_text, flags=re.DOTALL).strip()
         
         # 3. 返回干净纯粹的中文报告
@@ -132,10 +144,8 @@ def main():
         report_content += f"> **原版简介**: {item['description']}\n\n"
         report_content += f"{analysis}\n\n---\n\n"
         
-        # 核心防封控：每次 API 调用后强制睡 3 秒
         time.sleep(3) 
 
-    # 将报告写入本地文件
     with open('Daily_Report.md', 'w', encoding='utf-8') as f:
         f.write(report_content)
 
