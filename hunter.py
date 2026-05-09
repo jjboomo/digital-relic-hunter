@@ -18,6 +18,7 @@ client = OpenAI(
     base_url="https://api.minimax.chat/v1",  # 👈 第一步：必须改回干净的 v1
     default_headers={
         "GroupId": "2045840694379024402"     # 👈 第二步：把你的神秘代码放在这里！
+    }
 )
 
 HEADERS = {
