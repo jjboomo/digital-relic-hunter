@@ -15,10 +15,8 @@ if not GH_TOKEN or not MINIMAX_API_KEY:
 # 2. 初始化 MiniMax 客户端
 client = OpenAI(
     api_key=MINIMAX_API_KEY,
-    base_url="https://api.minimax.chat/v1",  # 👈 第一步：必须改回干净的 v1
-    default_headers={
-        "GroupId": "2045840694379024402"     # 👈 第二步：把你的神秘代码放在这里！
-    }
+    base_url="https://api.minimax.chat/v1", 
+
 )
 
 HEADERS = {
