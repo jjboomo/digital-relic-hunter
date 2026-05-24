@@ -1,19 +1,19 @@
-🏴‍☠️ 数字遗物猎人日报 (2026-05-23)
+🏴‍☠️ 数字遗物猎人日报 (2026-05-24)
 
-📦 猎物：atom-archive/xray
-链接：https://github.com/atom-archive/xray
+📦 猎物：eriklindernoren/ML-From-Scratch
+链接：https://github.com/eriklindernoren/ML-From-Scratch
 评估失败
 
 ---
 
-📦 猎物：fdehau/tui-rs
-链接：https://github.com/fdehau/tui-rs
+📦 猎物：twintproject/twint
+链接：https://github.com/twintproject/twint
 评估失败
 
 ---
 
-📦 猎物：openethereum/parity-ethereum
-链接：https://github.com/openethereum/parity-ethereum
+📦 猎物：acheong08/ChatGPT
+链接：https://github.com/acheong08/ChatGPT
 评估失败
 
 ---
