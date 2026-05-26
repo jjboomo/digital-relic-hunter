@@ -1,19 +1,19 @@
-🏴‍☠️ 数字遗物猎人日报 (2026-05-25)
+🏴‍☠️ 数字遗物猎人日报 (2026-05-26)
 
-📦 猎物：nativefier/nativefier
-链接：https://github.com/nativefier/nativefier
+📦 猎物：CoatiSoftware/Sourcetrail
+链接：https://github.com/CoatiSoftware/Sourcetrail
 评估失败
 
 ---
 
-📦 猎物：getgridea/gridea
-链接：https://github.com/getgridea/gridea
+📦 猎物：microsoft/napajs
+链接：https://github.com/microsoft/napajs
 评估失败
 
 ---
 
-📦 猎物：sismo-core/sismo-badges
-链接：https://github.com/sismo-core/sismo-badges
+📦 猎物：apache/incubator-weex
+链接：https://github.com/apache/incubator-weex
 评估失败
 
 ---
