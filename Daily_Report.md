@@ -1,19 +1,19 @@
-🏴‍☠️ 数字遗物猎人日报 (2026-05-26)
+🏴‍☠️ 数字遗物猎人日报 (2026-05-27)
 
-📦 猎物：CoatiSoftware/Sourcetrail
-链接：https://github.com/CoatiSoftware/Sourcetrail
+📦 猎物：linyacool/WebServer
+链接：https://github.com/linyacool/WebServer
 评估失败
 
 ---
 
-📦 猎物：microsoft/napajs
-链接：https://github.com/microsoft/napajs
+📦 猎物：google/guetzli
+链接：https://github.com/google/guetzli
 评估失败
 
 ---
 
-📦 猎物：apache/incubator-weex
-链接：https://github.com/apache/incubator-weex
+📦 猎物：EOSIO/eos
+链接：https://github.com/EOSIO/eos
 评估失败
 
 ---
