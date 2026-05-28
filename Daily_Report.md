@@ -1,19 +1,19 @@
-🏴‍☠️ 数字遗物猎人日报 (2026-05-27)
+🏴‍☠️ 数字遗物猎人日报 (2026-05-28)
 
-📦 猎物：linyacool/WebServer
-链接：https://github.com/linyacool/WebServer
+📦 猎物：peterq/pan-light
+链接：https://github.com/peterq/pan-light
 评估失败
 
 ---
 
-📦 猎物：google/guetzli
-链接：https://github.com/google/guetzli
+📦 猎物：XiaoMi/soar
+链接：https://github.com/XiaoMi/soar
 评估失败
 
 ---
 
-📦 猎物：EOSIO/eos
-链接：https://github.com/EOSIO/eos
+📦 猎物：google/grumpy
+链接：https://github.com/google/grumpy
 评估失败
 
 ---
