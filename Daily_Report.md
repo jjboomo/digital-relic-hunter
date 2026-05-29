@@ -1,19 +1,19 @@
-🏴‍☠️ 数字遗物猎人日报 (2026-05-28)
+🏴‍☠️ 数字遗物猎人日报 (2026-05-29)
 
-📦 猎物：peterq/pan-light
-链接：https://github.com/peterq/pan-light
+📦 猎物：zzzgydi/clash-verge
+链接：https://github.com/zzzgydi/clash-verge
 评估失败
 
 ---
 
-📦 猎物：XiaoMi/soar
-链接：https://github.com/XiaoMi/soar
+📦 猎物：getgridea/gridea
+链接：https://github.com/getgridea/gridea
 评估失败
 
 ---
 
-📦 猎物：google/grumpy
-链接：https://github.com/google/grumpy
+📦 猎物：kusti8/proton-native
+链接：https://github.com/kusti8/proton-native
 评估失败
 
 ---
