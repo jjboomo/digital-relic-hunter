@@ -1,19 +1,19 @@
-🏴‍☠️ 数字遗物猎人日报 (2026-05-29)
+🏴‍☠️ 数字遗物猎人日报 (2026-05-30)
 
-📦 猎物：zzzgydi/clash-verge
-链接：https://github.com/zzzgydi/clash-verge
+📦 猎物：pingcap/talent-plan
+链接：https://github.com/pingcap/talent-plan
 评估失败
 
 ---
 
-📦 猎物：getgridea/gridea
-链接：https://github.com/getgridea/gridea
+📦 猎物：paritytech/polkadot
+链接：https://github.com/paritytech/polkadot
 评估失败
 
 ---
 
-📦 猎物：kusti8/proton-native
-链接：https://github.com/kusti8/proton-native
+📦 猎物：paritytech/substrate
+链接：https://github.com/paritytech/substrate
 评估失败
 
 ---
